@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Developing Data Products Course Project</title>
+  <meta name="description" content="">
+  <meta name="author" content="Emma Ideal">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "libraries/widgets/interactive/css/aceeditor.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h1>In What U.S. State Should You Live?*</h1>
+  <p><font size="5">*if you want to base your decision on crime levels in 1973</font></p>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Have a look at:</h2>
+  <ul>
+<li><span style="color:green">Assault</span> (per 100k residents)<br></li>
+<li><span style="color:mediumblue">Murder</span> (per 100k residents)<br></li>
+<li><span style="color:darkmagenta">Rape</span> (per 100k residents)</li>
+<li>% <span style="color:chocolate">Urban</span> population</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>For each U.S. state, and even...</p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Use Interactive Maps!</h2>
+   
+<div class='row-fluid'>
+  <div class='span5'>
+    <form id="knitForm3" data-cell="3">
+      <!-- GeoChart generated in R 3.2.1 by googleVis 0.5.9 package -->
+
+<!-- Wed Aug 19 22:21:17 2015 -->
+
+<!-- jsHeader -->
+
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataGeoChartID51507b4ad187 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Alabama",
+236 
+],
+[
+ "Alaska",
+263 
+],
+[
+ "Arizona",
+294 
+],
+[
+ "Arkansas",
+190 
+],
+[
+ "California",
+276 
+],
+[
+ "Colorado",
+204 
+],
+[
+ "Connecticut",
+110 
+],
+[
+ "Delaware",
+238 
+],
+[
+ "Florida",
+335 
+],
+[
+ "Georgia",
+211 
+],
+[
+ "Hawaii",
+46 
+],
+[
+ "Idaho",
+120 
+],
+[
+ "Illinois",
+249 
+],
+[
+ "Indiana",
+113 
+],
+[
+ "Iowa",
+56 
+],
+[
+ "Kansas",
+115 
+],
+[
+ "Kentucky",
+109 
+],
+[
+ "Louisiana",
+249 
+],
+[
+ "Maine",
+83 
+],
+[
+ "Maryland",
+300 
+],
+[
+ "Massachusetts",
+149 
+],
+[
+ "Michigan",
+255 
+],
+[
+ "Minnesota",
+72 
+],
+[
+ "Mississippi",
+259 
+],
+[
+ "Missouri",
+178 
+],
+[
+ "Montana",
+109 
+],
+[
+ "Nebraska",
+102 
+],
+[
+ "Nevada",
+252 
+],
+[
+ "New Hampshire",
+57 
+],
+[
+ "New Jersey",
+159 
+],
+[
+ "New Mexico",
+285 
+],
+[
+ "New York",
+254 
+],
+[
+ "North Carolina",
+337 
+],
+[
+ "North Dakota",
+45 
+],
+[
+ "Ohio",
+120 
+],
+[
+ "Oklahoma",
+151 
+],
+[
+ "Oregon",
+159 
+],
+[
+ "Pennsylvania",
+106 
+],
+[
+ "Rhode Island",
+174 
+],
+[
+ "South Carolina",
+279 
+],
+[
+ "South Dakota",
+86 
+],
+[
+ "Tennessee",
+188 
+],
+[
+ "Texas",
+201 
+],
+[
+ "Utah",
+120 
+],
+[
+ "Vermont",
+48 
+],
+[
+ "Virginia",
+156 
+],
+[
+ "Washington",
+145 
+],
+[
+ "West Virginia",
+81 
+],
+[
+ "Wisconsin",
+53 
+],
+[
+ "Wyoming",
+161 
+] 
+];
+data.addColumn('string','state');
+data.addColumn('number','Assault');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartGeoChartID51507b4ad187() {
+var data = gvisDataGeoChartID51507b4ad187();
+var options = {};
+options["width"] =    600;
+options["height"] =    400;
+options["region"] = "US";
+options["resolution"] = "provinces";
+options["displayMode"] = "regions";
+options["forceIFrame"] = "TRUE";
+options["colorAxis"] = {colors:['#FFFFFF', '#0000FF']};
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID51507b4ad187')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID51507b4ad187);
+})();
+function displayChartGeoChartID51507b4ad187() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+
+<!-- jsChart -->  
+
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID51507b4ad187"></script>
+ 
+
+<!-- divChart -->
+
+<div id="GeoChartID51507b4ad187" 
+  style="width: 600; height: 400;">
+</div>
+
+      <div id='aceeditor3' style="height:px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode3' data-action='runCode'
+            data-cell='3' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode3' data-action='testCode'
+             data-cell='3' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult3' data-action='clearResult'
+             data-cell='3' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint3' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='3' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+  <div class='span7'>
+    <iframe id="knitResult3" class='shiny-html-output'></iframe>
+  </div>
+</div>
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Ever thought about moving to North Dakota?</h2>
+  <iframe src="https://eideal.shinyapps.io/DataProducts_AppforSlidify" width="100%" height="100" class="shiny-frame"></iframe>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Interested?* Find out more:</h2>
+  <ul>
+<li>See the app on <a href="https://eideal.shinyapps.io/DataProducts_CourseProject">shinyapps.io</a><br></li>
+<li>Source code on <a href="https://github.com/eideal/DataProducts_CourseProject">Github</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><font size="4">*I&#39;m not surprised</font></p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <script src="shared/shiny.js" type="text/javascript"></script>
+<script src="shared/slider/js/jquery.slider.min.js"></script>
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+
+<!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- End Google Prettify --> 
+
+</html>
