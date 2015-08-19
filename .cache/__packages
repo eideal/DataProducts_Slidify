@@ -1,0 +1,17 @@
+base
+lattice
+ggplot2
+caret
+survival
+gbm
+randomForest
+googleVis
+dplyr
+reshape2
+data.table
+shiny
+maps
+mapproj
+markdown
+shinyapps
+slidify
