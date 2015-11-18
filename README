@@ -1,10 +1,10 @@
 README for DataProducts_Slidify
 
 This is a Slidify pitch for a Shiny application I created, which interactively visualizes crime levels in the United States. 
-The Shiny application is published here: https://eideal.shinyapps.io/DataProducts_CourseProject.
+The Shiny application is published here: http://eideal.shinyapps.io/DataProducts_CourseProject.
 
 
 ----
 Main Output
 ----
-The repository contains a gh-pages branch, so the Slidify presentation can be viewed at: eideal.github.io/DataProducts_Slidify/index.html
+The repository contains a gh-pages branch, so the Slidify presentation can be viewed at: http://eideal.github.io/DataProducts_Slidify/index.html
